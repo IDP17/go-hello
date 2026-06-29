@@ -1,5 +1,7 @@
 package say_hello
 
-func SayHello(name string) string {
-	return "Hello " + name
+import "strconv"
+
+func SayHello(name string, age int) string {
+	return "Hello " + name + ", you are " + strconv.Itoa(age) + " years old"
 }
